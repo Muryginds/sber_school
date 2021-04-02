@@ -1,8 +1,9 @@
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import utility.ArithmeticalActions;
 
-public class Task_1 {
+public class Task1 {
 
   private static final String INPUT_MESSAGE = "Введите данные в формате: <int число1> <знак [+, -, *, /]> <int число 2>";
   public static final String MATCHING_TEXT = "([0-9]+)\\s*([+\\-*\\/])\\s*([0-9]+)";

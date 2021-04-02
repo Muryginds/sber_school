@@ -1,3 +1,5 @@
+package utility;
+
 public enum ArithmeticalActions {
   ADDITION,
   SUBTRACTION,

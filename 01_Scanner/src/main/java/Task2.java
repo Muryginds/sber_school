@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Task_2 {
+public class Task2 {
   private static final String INPUT_MESSAGE = "Введите данные в формате: <1,2, …, n>";
 
   public static void main(String[] args) {
