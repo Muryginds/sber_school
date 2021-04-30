@@ -1,12 +1,6 @@
-<<<<<<< HEAD:01_Scanner/src/main/java/company/Task1.java
-package company;
-
-import company.utility.ArithmeticalActions;
-=======
 package com.company;
 
 import com.company.utility.ArithmeticalActions;
->>>>>>> a88bea94c0eed3768a48f5c7565e92f06ee7ed9c:01_Scanner/src/main/java/com/company/Task1.java
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
