@@ -1,3 +1,9 @@
+<<<<<<< HEAD:01_Scanner/src/main/java/company/Task2.java
+package company;
+=======
+package com.company;
+>>>>>>> a88bea94c0eed3768a48f5c7565e92f06ee7ed9c:01_Scanner/src/main/java/com/company/Task2.java
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
