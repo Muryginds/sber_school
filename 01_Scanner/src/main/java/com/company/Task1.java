@@ -1,7 +1,9 @@
+package com.company;
+
+import com.company.utility.ArithmeticalActions;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import utility.ArithmeticalActions;
 
 public class Task1 {
 

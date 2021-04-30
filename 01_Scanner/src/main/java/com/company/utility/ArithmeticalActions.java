@@ -1,4 +1,4 @@
-package utility;
+package com.company.utility;
 
 public enum ArithmeticalActions {
   ADDITION,
