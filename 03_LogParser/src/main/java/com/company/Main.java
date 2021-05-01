@@ -26,7 +26,7 @@ public class Main {
 
       String userName = "Eduard Petrovich Morozko";
       Set<String> userUniqueIP = parser.getIPsForUser(userName, after, before);
-      System.out.println("User "+ userName +" Unique IPs: " + userUniqueIP);
+      System.out.println("User \""+ userName +"\" unique IPs: " + userUniqueIP);
 
       Set<String> eventUniqueIP = parser.getIPsForEvent(Event.WRITE_MESSAGE, after, before);
       System.out.println("Event filtered IPs: " + eventUniqueIP);
