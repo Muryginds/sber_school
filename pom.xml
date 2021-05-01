@@ -9,10 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>StreamAPI</module>
-        <module>02_Cycles</module>
         <module>01_Scanner</module>
+        <module>02_Cycles</module>
         <module>04_StreamAPI</module>
+        <module>03_LogParser</module>
+        <module>05_TestCases</module>
     </modules>
 
     <properties>
