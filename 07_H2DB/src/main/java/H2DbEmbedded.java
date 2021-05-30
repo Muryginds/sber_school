@@ -33,18 +33,50 @@ public class H2DbEmbedded
       stmt.executeUpdate("INSERT INTO animal VALUES (5, 2, 'Zoe', '2005-11-12T03:44')");
     }
 
-    String sql = "SELECT * FROM species WHERE id = ?";
+/*    String sql = "SELECT * FROM species WHERE id = ?";
     PreparedStatement statement = connection.prepareStatement(sql);
     statement.setString(1, "2");
     ResultSet resultSet = statement.executeQuery();
-    printResultSet(resultSet);
+    System.out.println(resultSet.absolute(-1));*/
+    //System.out.println(resultSet.absolute(-3));
+    //printResultSet(resultSet);
 
-    statement.setString(1, "1");
-    ResultSet resultSet1 = statement.executeQuery();
-    printResultSet(resultSet1);
+/*    statement.setString(1, "1");
+    resultSet = statement.executeQuery();
+    printResultSet(resultSet);*/
 
+    String sql1 = "SELECT * FROM species, animal WHERE species.id = animal.species_id";
+    PreparedStatement statement1 = connection.prepareStatement(sql1);
+    ResultSet resultSet1 = statement1.executeQuery();
+    printResultSet1(resultSet1);
 
     connection.close();
+  }
+
+  private static void printResultSet1(ResultSet resultSet) throws SQLException {
+    StringBuilder sb = new StringBuilder();
+    while (resultSet.next()) {
+
+
+      for (int i = 1; i <= 7; i++) {
+        sb.append(checkInstanceOf(resultSet.getObject(i)));
+        if (i != 7) {
+          sb.append(" ");
+        }
+      }
+      sb.append("\n============================\n");
+    }
+    System.out.println(sb.toString());
+  }
+
+  private static String checkInstanceOf(Object object) {
+     if (object instanceof String) {
+       return object.toString();
+     } else if (object instanceof Integer) {
+       return object.toString();
+     } else {
+       return object.toString();
+     }
   }
 
   private static void printResultSet(ResultSet resultSet) throws SQLException {
