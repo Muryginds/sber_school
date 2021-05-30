@@ -14,6 +14,8 @@
         <module>04_StreamAPI</module>
         <module>03_LogParser</module>
         <module>05_TestCases</module>
+        <module>06_Concurrency</module>
+        <module>07_H2DB</module>
     </modules>
 
     <properties>
